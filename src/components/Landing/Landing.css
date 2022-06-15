@@ -25,16 +25,30 @@
   z-index:1;
 }
 
+.skull {
+  height:10vh;
+  pointer-events: none;
+  z-index:1;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .spin {
-    animation: spiral-spin infinite 5s ease-in;
+    animation: spiral-spin infinite 6s ease-in;
+  }
+  .grow {
+    animation: skull-grow 3s ease-in;
+    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;  
   }
 }
 
 .LandingTextContainer{
   z-index:2;
-  position: fixed;
+  text-align: center;
+  align-items: center;
 }
 .Title1{
   color: #7a0b12;
@@ -43,12 +57,18 @@
 }
 
 @keyframes spiral-spin {
+  0%{transform: rotate(1440deg);}
+  100%{transform: rotate(0deg);}
+}
+
+@keyframes skull-grow {
   from {
-    transform: rotate(360deg);
+    transform: scale(1);
   }
   to {
-    transform: rotate(0deg);
+    transform: scale(100);
   }
+
 }
 
 .EnterButton{
