@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+  overflow-x: hidden; 
+  overflow-y: hidden;
+  margin: 0;
+}
+
+.spiral {
+  width: 120vw;
+  pointer-events: none;
+  position:fixed;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spiral {
+    animation: spiral-spin infinite 10s linear;
+  }
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes spiral-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
