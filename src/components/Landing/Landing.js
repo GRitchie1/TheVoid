@@ -4,9 +4,12 @@ import styles from './Landing.module.css';
 function Landing() {
   return (
     <div className={styles.Landing}>
-      <header className={styles.Landingheader}>
+      <header className={styles.LandingContainer}>
       <img src={spiral} className={styles.spiral} alt="logo" />
-        <h1>Welcome to The Void</h1>
+      <div className={styles.TextContainer}>
+        <h1 className={styles.Title1}>Welcome to The Void</h1>
+        <button className={styles.EnterButton} onClick={()=>{alert('hi')}}>Click here to enter, if you dare!</button>
+      </div>
       </header>
     </div>
   );
