@@ -25,13 +25,14 @@
   z-index:1;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
-  .spiral {
-    animation: spiral-spin infinite 10s linear;
+  .spin {
+    animation: spiral-spin infinite 5s ease-in;
   }
 }
 
-.TextContainer{
+.LandingTextContainer{
   z-index:2;
   position: fixed;
 }
