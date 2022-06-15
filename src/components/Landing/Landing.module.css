@@ -1,4 +1,4 @@
-.App {
+.Landing {
   text-align: center;
   overflow-x: hidden; 
   overflow-y: hidden;
@@ -6,9 +6,11 @@
 }
 
 .spiral {
-  width: 120vw;
+  min-height:120vh;
+  min-width: 120vw;
   pointer-events: none;
   position:fixed;
+  z-index:1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -17,7 +19,7 @@
   }
 }
 
-.App-header {
+.Landingheader {
   background-color: white;
   min-height: 100vh;
   display: flex;
@@ -25,11 +27,12 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: black;
+  color: #7a0b12;
+  z-index:0;
 }
 
-.App-link {
-  color: #61dafb;
+.Landingheader h1{
+  z-index:2;
 }
 
 @keyframes spiral-spin {
