@@ -1,24 +1,20 @@
 import React from 'react';
 import spiral from './spiral.svg';
 import skull from './skull.png';
-import './Landing.css';
+import { Parallax } from "react-scroll-parallax";
+import style from "./Landing.module.css";
 
-function Landing() {
-  const [isRotating, setIsRotating] = React.useState(false);
-  const onRotate = () => {
-    setIsRotating(true)
-  };
+const Landing = () => {
 
   return (
-    <div className="Landing">
-      <header className="LandingContainer">
-      <img src={spiral} className={`spiral ${isRotating ? 'spin' : ''}`} alt="logo" />
-      <div className="LandingTextContainer">
-        <h1 className="Title1">Welcome to The Void</h1>
-        <img src={skull} className={`skull ${isRotating ? 'grow' : ''}`} alt="logo" />
-        <button className="EnterButton" onClick={onRotate}>Click here to enter, if you dare!</button>
-      </div>
-      </header>
+    <div className={style.Landing}>
+      <Parallax rotate={[0, -2880]} className={style.LandingContainer}>
+      <img src={spiral} className={style.spiral} alt="logo" />
+      </Parallax>
+      <Parallax className={style.LandingTextContainer}>
+      <h1 className={style.Title1}>Welcome to The Void</h1>
+      <img src={skull} className={style.skull} alt="logo" />
+      </Parallax>
     </div>
   );
 }

@@ -1,0 +1,42 @@
+.Landing {
+  text-align: center;
+  margin: 0;
+}
+
+.LandingContainer {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  z-index:0;
+}
+
+.spiral {
+  min-height:120vh;
+  min-width: 120vw;
+  pointer-events: none;
+  position:fixed;
+  z-index:1;
+}
+
+.skull {
+  height:10vh;
+  pointer-events: none;
+  z-index:1;
+}
+
+.LandingTextContainer{
+  z-index:2;
+  text-align: center;
+  align-items: center;
+  background-color:black;
+  height:100vh;
+}
+.Title1{
+  color: #7a0b12;
+  font-size: calc(50px + 6vmin);
+  text-shadow: 4px 4px #ffffff;
+  z-index:1;
+}
