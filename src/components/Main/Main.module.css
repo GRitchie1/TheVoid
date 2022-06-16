@@ -1,0 +1,18 @@
+.ParallaxContainer {
+  text-align: center;
+  margin: 0;
+  background-color: black;
+  min-height: 500vh;
+  z-index:3;
+}
+
+.Title{
+  color: #7a0b12;
+  font-size: calc(50px + 6vmin);
+  text-shadow: 4px 4px #ffffff;
+}
+
+.MainBody{
+  background-color: red;
+  min-height: 200vh;
+}

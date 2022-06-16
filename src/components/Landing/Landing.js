@@ -8,10 +8,10 @@ const Landing = () => {
 
   return (
     <div className={style.Landing}>
-      <Parallax rotate={[0, -2880]} className={style.LandingContainer}>
+      <Parallax translateY={['-600px', '1000px']} rotate={[2880, 0]} opacity={[2,0]} className={style.LandingContainer}>
       <img src={spiral} className={style.spiral} alt="logo" />
       </Parallax>
-      <Parallax className={style.LandingTextContainer}>
+      <Parallax translateY={['-600px', '0px']} className={style.LandingTextContainer}>
       <h1 className={style.Title1}>Welcome to The Void</h1>
       <img src={skull} className={style.skull} alt="logo" />
       </Parallax>

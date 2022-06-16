@@ -4,6 +4,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 
 import './index.css';
 import Landing from './components/Landing/Landing';
+import Main from './components/Main/Main'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,6 +12,7 @@ root.render(
   <React.StrictMode>
       <ParallaxProvider>
         <Landing />
+        <Main />
       </ParallaxProvider>
   </React.StrictMode>
 );
